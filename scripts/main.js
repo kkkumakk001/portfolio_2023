@@ -1,1 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => { alert('main.js'); });
+class Main {
+    constructor() {
+        this._init();
+    }
+    _init() {
+        new MobileMenu;
+    }
+}
+
+const main = new Main;

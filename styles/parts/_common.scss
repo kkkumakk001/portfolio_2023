@@ -24,3 +24,78 @@ img {
         flex-wrap: wrap;
     }
 }
+
+.logo {
+    &__github {
+        color: $cBlack;
+    }
+}
+
+.mb-sm {
+    margin-bottom: 16px !important;
+}
+
+.mb-lg {
+    margin-bottom: 80px !important;
+
+    @include mq(lg) {
+        margin-bottom: 150px !important;
+    }
+}
+
+.pb-sm {
+    padding-bottom: 16px !important;
+}
+
+.pb-lg {
+    padding-bottom: 80px !important;
+
+    @include mq(lg) {
+        padding-bottom: 150px !important;
+    }
+}
+
+.font-sm {
+    font-size: 14px;
+
+    @include mq(lg) {
+        font-size: 16px;
+    }
+}
+
+.font-md {
+    font-size: 17px;
+
+    @include mq(lg) {
+        font-size: 19px;
+    }
+}
+
+.font-lr {
+    font-size: 17px;
+
+    @include mq(lg) {
+        font-size: 23px;
+    }
+}
+
+.font-lg {
+    font-size: 25px;
+
+    @include mq(lg) {
+        font-size: 36px;
+    }
+}
+
+.main-title {
+    @extend .font-lg;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: block;
+}
+
+.sub-title {
+    @extend .font-sm;
+    @extend .mb-sm;
+    color: $cSubTitle;
+}

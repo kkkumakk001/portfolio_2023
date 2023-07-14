@@ -13,11 +13,14 @@
         />
         <link rel="stylesheet" href="styles/vendors/css-reset.css" />
         <link rel="stylesheet" href="styles/style.css" />
+
+        <script src="scripts/libs/mobile-menu.js" defer></script>
+        <script src="scripts/main.js" defer></script>
     </head>
     <body>
         <div class="global-container">
             <div class="container">
-                <div class="mobile-menu-cover"></div>
+                <div class="mobile-menu__cover"></div>
                 <div class="nav-trigger"></div>
                 <header class="header">
                     <div class="header__inner">
@@ -59,7 +62,34 @@
                 </content>
                 <footer class="footer"></footer>
             </div>
-            <div class="mobile-menu"></div>
+            <nav class="mobile-menu">
+                <div class="logo item">
+                    <a href="#">
+                        <img src="images/github-icon.png" alt="Githubのアイコン" />
+                        <span class="logo__github">Github</span>
+                    </a>
+                </div>
+                <ul class="mobile-menu__main">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#">
+                            <span class="main-title">introduction</span>
+                            <span class="sub-title">私について</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#">
+                            <span class="main-title">works</span>
+                            <span class="sub-title">作品</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#">
+                            <span class="main-title">skills</span>
+                            <span class="sub-title">スキル</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </body>
 </html>
