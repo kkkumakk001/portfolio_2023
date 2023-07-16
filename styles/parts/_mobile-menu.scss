@@ -12,14 +12,14 @@ $cMenuOpen: $cBlack;
     & .logo {
         display: block;
         padding: 0 100px;
-        font-size: 24px;
+        // font-size: 16px;
         opacity: 0;
         transition: opacity 0.3s ease;
         text-align: center;
 
         & img {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             margin: 0 auto;
         }
     }
