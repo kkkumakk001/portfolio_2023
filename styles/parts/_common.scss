@@ -87,6 +87,11 @@ img {
     }
 }
 
+.section-title {
+    width: 100%;
+    // text-align: center
+}
+
 .main-title {
     @extend .font-lg;
     font-weight: 600;
@@ -96,7 +101,7 @@ img {
 
 .sub-title {
     @extend .font-sm;
-    @extend .mb-sm;
+    margin-bottom: 50px;
     color: $cSubTitle;
 }
 

@@ -7,7 +7,7 @@ img {
   vertical-align: bottom;
 }
 
-.content-width, .header__inner, .footer, .skills {
+.content-width, .header__inner, .footer, .skills__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -28,7 +28,7 @@ img {
   color: #333;
 }
 
-.mb-sm, .sub-title {
+.mb-sm {
   margin-bottom: 16px !important;
 }
 
@@ -90,6 +90,10 @@ img {
   }
 }
 
+.section-title {
+  width: 100%;
+}
+
 .main-title {
   font-weight: 600;
   margin-bottom: 0;
@@ -97,6 +101,7 @@ img {
 }
 
 .sub-title {
+  margin-bottom: 50px;
   color: #535353;
 }
 
@@ -385,11 +390,7 @@ img {
   background-image: url(../../images/github-icon.png);
 }
 
-.devicon-javascript-plain {
-  font-size: 200px;
-}
-
-.skills {
+.skills__inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -403,7 +404,7 @@ img {
   padding: 30px 0;
   margin: 0 auto 50px;
   background: #fff;
-  box-shadow: -3px -3px 8px #aaaaaa, 3px 3px 8px #ffffff;
+  box-shadow: -2px -2px 8px #aaaaaa, 2px 2px 8px #ffffff;
 }
 @media screen and (min-width: 600px) {
   .card {
@@ -417,7 +418,7 @@ img {
 .card__title {
   width: 80%;
   padding: 7px 0;
-  margin: 0 auto 10px;
+  margin: 0 auto 30px;
   border-radius: 100px;
   background: #fff;
   box-shadow: 4px 4px 8px #aaa, -4px -4px 8px #fff;
@@ -425,4 +426,7 @@ img {
 .card__desc {
   color: #535353;
   width: 200px;
+}
+.card__img {
+  font-size: 200px;
 }/*# sourceMappingURL=style.css.map */

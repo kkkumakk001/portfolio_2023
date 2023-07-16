@@ -172,11 +172,11 @@
     }
 }
 
-.devicon-javascript-plain {
-    font-size: 200px;
-}
+// .devicon-javascript-plain {
+//     font-size: 200px;
+// }
 
-.skills {
+.skills__inner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -191,8 +191,8 @@
     padding: 30px 0;
     margin: 0 auto 50px;
     background: #fff;
-    box-shadow: -3px -3px 8px #aaaaaa,
-                 3px 3px 8px #ffffff;
+    box-shadow: -2px -2px 8px #aaaaaa,
+                 2px 2px 8px #ffffff;
 
     @include mq(md) {
         width: 42.5%;
@@ -210,7 +210,7 @@
         @extend .font-md;
         width: 80%;
         padding: 7px 0;
-        margin: 0 auto 10px;
+        margin: 0 auto 30px;
         border-radius: 100px;
         background: #fff;
         box-shadow: 4px 4px 8px #aaa,
@@ -221,5 +221,9 @@
         color: $cSubTitle;
         @extend .font-sm;
         width: 200px;
+    }
+
+    &__img {
+        font-size: 200px;
     }
 }
