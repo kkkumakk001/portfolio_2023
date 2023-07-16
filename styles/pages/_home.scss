@@ -171,3 +171,55 @@
         background-image: url(../../images/github-icon.png);
     }
 }
+
+.devicon-javascript-plain {
+    font-size: 200px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @extend .content-width;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto 50px;
+    background: #fff;
+    box-shadow: -3px -3px 8px #aaaaaa,
+                 3px 3px 8px #ffffff;
+
+    @include mq(md) {
+        width: 42.5%;
+    }
+    // @include mq(lg) {
+    //     width: 23.75%;
+    // }
+
+    &__content {
+        margin: 10px auto 0;
+        width: 200px;
+    }
+
+    &__title {
+        @extend .font-md;
+        width: 80%;
+        padding: 7px 0;
+        margin: 0 auto 10px;
+        border-radius: 100px;
+        background: #fff;
+        box-shadow: 4px 4px 8px #aaa,
+            -4px -4px 8px #fff;
+    }
+
+    &__desc {
+        color: $cSubTitle;
+        @extend .font-sm;
+        width: 200px;
+    }
+}
