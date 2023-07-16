@@ -124,7 +124,7 @@
 
     &__li {
         margin-bottom: 20px;
-        
+
         @include mq(lg) {
             margin: 0 0 0 40px;
         }
@@ -132,5 +132,42 @@
         & a {
             color: $cSubTitle;
         }
+    }
+}
+
+.side {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 0;
+
+    @include mq(lg) {
+        display: block;
+    }
+
+    &__inner {
+        transform-origin: top left;
+        transform: rotate(-90deg) translatex(-50%);
+    }
+}
+
+.icon {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        width: 1em;
+        height: 1em;
+        transform: translateY(-50%);
+        background-position: center;
+        background-repeat: none;
+        background-size: contain;
+    }
+
+    &.github::before {
+        background-image: url(../../images/github-icon.png);
     }
 }

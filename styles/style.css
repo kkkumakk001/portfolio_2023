@@ -350,4 +350,39 @@ img {
 }
 .footer__li a {
   color: #535353;
+}
+
+.side {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+@media screen and (min-width: 960px) {
+  .side {
+    display: block;
+  }
+}
+.side__inner {
+  transform-origin: top left;
+  transform: rotate(-90deg) translatex(-50%);
+}
+
+.icon {
+  position: relative;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 1em;
+  height: 1em;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: none;
+  background-size: contain;
+}
+.icon.github::before {
+  background-image: url(../../images/github-icon.png);
 }/*# sourceMappingURL=style.css.map */
